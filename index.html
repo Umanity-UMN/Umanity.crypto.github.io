@@ -3,151 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umanity: Una criptovaluta per un mondo migliore</title>
+    <title>Umanity - Una criptovaluta per un mondo migliore</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #e0e0e0; /* Sfondo grigio chiaro */
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Sfondo grigio chiaro */
         }
         header {
-            background-color: #1E90FF; /* Colore azzurro */
+            background-color: #007BFF; /* Barra azzurra */
             color: white;
-            text-align: center;
-            padding: 20px 10px;
-            position: relative;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
         }
         header img {
-            position: absolute;
-            left: 20px;
-            top: 20px;
-            width: 50px; /* Regola la dimensione del logo secondo le tue esigenze */
-            height: 50px;
+            height: 50px; /* Altezza del logo */
+            margin-right: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 20px;
-            margin: 10px;
-            background-color: #ffffff; /* Sezioni con sfondo bianco per contrasto */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .images img {
-            width: 100%;
-            max-width: 500px;
-            margin: 10px 0;
-            display: block;
-            border-radius: 5px;
-        }
-        .contact-form {
-            background: #f9f9f9;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            max-width: 500px;
-            margin: 20px auto;
-        }
-        .contact-form input, .contact-form textarea, .contact-form button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
         }
         footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #1E90FF; /* Colore azzurro */
+            background-color: #333;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
         }
-        a {
-            color: #1E90FF; /* Colore azzurro per i link */
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
             text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            header img {
-                width: 40px;
-                height: 40px;
-                top: 15px;
-                left: 10px;
-            }
-            section {
-                padding: 15px;
-                margin: 5px;
-            }
-            footer {
-                padding: 15px;
-            }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
+    <!-- Logo e Titolo -->
     <header>
-        <img src="logo.png" alt="Logo Umanity"> <!-- Inserisci il percorso corretto del tuo logo -->
-        <h1>Umanity: Una criptovaluta per un mondo migliore</h1>
+        <img src="LOGO_FILE_NAME.png" alt="Logo Umanity"> <!-- Sostituisci LOGO_FILE_NAME.png con il nome del tuo file logo -->
+        <h1>Umanity - Una criptovaluta per un mondo migliore</h1>
     </header>
 
-    <section>
-        <h2>Missione</h2>
-        <p>Umanity è più di una criptovaluta: è un progetto nato con il cuore per aiutare chi è in difficoltà. Il nostro obiettivo è offrire supporto concreto ai senzatetto e agli orfani, costruendo infrastrutture per il primo soccorso e fornendo assistenza a chi ne ha più bisogno.</p>
-        <p>La forza di Umanity risiede nella sua comunità. I fondi verranno raccolti tramite la vendita della moneta stessa:</p>
-        <ul>
-            <li><strong>50%</strong> del ricavato sarà destinato alla creazione di infrastrutture e servizi per aiutare le persone bisognose.</li>
-            <li><strong>50%</strong> servirà per sostenere lo sviluppo e la crescita della criptovaluta, garantendo la sua sostenibilità nel tempo.</li>
-        </ul>
-        <p>Crediamo che ogni investimento in Umanity non sia solo un passo verso il futuro della finanza, ma anche un atto di solidarietà verso il prossimo.</p>
-        <p><strong>Insieme possiamo costruire un mondo più giusto. Unisciti a noi e fai parte del cambiamento!</strong></p>
+    <!-- Barra di Navigazione -->
+    <nav>
+        <a href="#descrizione">Descrizione</a>
+        <a href="#video">Video</a>
+        <a href="#immagini">Immagini</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <!-- Sezioni del Sito -->
+    <section id="descrizione">
+        <h2>Descrizione</h2>
+        <p>Umanity è più di una criptovaluta: è un progetto nato con il cuore per aiutare chi è in difficoltà. [...]</p>
     </section>
 
-    <section class="images">
-        <h2>Immagini</h2>
-        <img src="aiuto-casa.png" alt="Un gesto solidale per la casa">
-        <img src="cibo-aiuto.png" alt="Distribuzione di cibo ai bisognosi">
-        <img src="senza-tetto.png" alt="Realtà quotidiane dei senzatetto">
-    </section>
-
-    <section>
-        <h2>Guarda il nostro messaggio</h2>
-        <video controls width="500">
-            <source src="your-video-file.mp4" type="video/mp4">
+    <section id="video">
+        <h2>Video</h2>
+        <video controls width="100%">
+            <source src="YOUR_VIDEO_FILE.mp4" type="video/mp4"> <!-- Sostituisci con il nome del tuo file video -->
             Il tuo browser non supporta il tag video.
         </video>
     </section>
 
-    <section>
-        <h2>Contattaci</h2>
-        <p>Hai domande o vuoi unirti al nostro progetto? Siamo qui per aiutarti!</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:Umanity.Crypto@proton.me">Umanity.Crypto@proton.me</a></li>
-            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/umanity.crypto_official/" target="_blank">umanity.crypto_official</a></li>
-            <li><strong>Threads:</strong> <a href="https://www.threads.net/@umanity.crypto_official?xmt=AQGz6il_uWvx9tFtErT122CcndozPDbjSPTv8x9GuGJxxYw" target="_blank">umanity.crypto_official</a></li>
-        </ul>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/your-form-id" method="POST">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Il tuo indirizzo email" required>
-
-                <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" placeholder="Scrivi qui il tuo messaggio..." rows="4" required></textarea>
-
-                <button type="submit">Invia Messaggio</button>
-            </form>
-        </div>
+    <section id="immagini">
+        <h2>Immagini</h2>
+        <img src="aiuto_casa.png" alt="Aiuto Casa" width="300">
+        <img src="aiuto_cibo.png" alt="Aiuto Cibo" width="300">
+        <img src="senza_tetto.png" alt="Senza Tetto" width="300">
     </section>
 
+    <section id="contatti">
+        <h2>Contattaci</h2>
+        <p>Email: <a href="mailto:Umanity.Crypto@proton.me">Umanity.Crypto@proton.me</a></p>
+        <p>Social:</p>
+        <ul>
+            <li><a href="https://www.instagram.com/umanity.crypto_official/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.threads.net/@umanity.crypto_official?xmt=AQGz6il_uWvx9tFtErT122CcndozPDbjSPTv8x9GuGJxxYw" target="_blank">Threads</a></li>
+        </ul>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="messaggio">Messaggio:</label><br>
+            <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
+            <button class="button" type="submit">Invia</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Umanity. Tutti i diritti riservati.</p>
+        &copy; 2024 Umanity. Tutti i diritti riservati.
     </footer>
 </body>
 </html>
