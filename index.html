@@ -10,26 +10,38 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #e0e0e0; /* Sfondo grigio chiaro */
         }
         header {
-            background-color: #4caf50;
+            background-color: #1E90FF; /* Colore azzurro */
             color: white;
             text-align: center;
             padding: 20px 10px;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 50px; /* Regola la dimensione del logo secondo le tue esigenze */
+            height: 50px;
         }
         section {
             padding: 20px;
             margin: 10px;
+            background-color: #ffffff; /* Sezioni con sfondo bianco per contrasto */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .images img {
             width: 100%;
             max-width: 500px;
             margin: 10px 0;
             display: block;
+            border-radius: 5px;
         }
         .contact-form {
-            background: #fff;
+            background: #f9f9f9;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -46,20 +58,40 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #4caf50;
+            background-color: #1E90FF; /* Colore azzurro */
             color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
         a {
-            color: #4caf50;
+            color: #1E90FF; /* Colore azzurro per i link */
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header img {
+                width: 40px;
+                height: 40px;
+                top: 15px;
+                left: 10px;
+            }
+            section {
+                padding: 15px;
+                margin: 5px;
+            }
+            footer {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo Umanity"> <!-- Inserisci il percorso corretto del tuo logo -->
         <h1>Umanity: Una criptovaluta per un mondo migliore</h1>
     </header>
 
