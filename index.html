@@ -1,129 +1,83 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umanity - Una criptovaluta per un mondo migliore</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* Sfondo grigio chiaro */
-        }
-        header {
-            background-color: #007BFF; /* Barra azzurra */
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-        }
-        header img {
-            height: 50px; /* Altezza del logo */
-            margin-right: 15px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        nav {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        .button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Umanity - The Future of Cryptocurrency</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="chat.js" defer></script>
 </head>
 <body>
-    <!-- Logo e Titolo -->
     <header>
-        <img src="LOGO_FILE_NAME.png" alt="Logo Umanity"> <!-- Sostituisci LOGO_FILE_NAME.png con il nome del tuo file logo -->
-        <h1>Umanity - Una criptovaluta per un mondo migliore</h1>
+        <div class="logo">
+            <img src="moneta Umanity .png" alt="Umanity Logo" style="height: 80px;">
+        </div>
+        <h1>Welcome to Umanity</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Umanity</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#chat">Community Chat</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Barra di Navigazione -->
-    <nav>
-        <a href="#descrizione">Descrizione</a>
-        <a href="#video">Video</a>
-        <a href="#immagini">Immagini</a>
-        <a href="#contatti">Contatti</a>
-    </nav>
-
-    <!-- Sezioni del Sito -->
-    <section id="descrizione">
-        <h2>Descrizione</h2>
-        <p>Umanity è più di una criptovaluta: è un progetto nato con il cuore per aiutare chi è in difficoltà. [...]</p>
+    <section id="about">
+        <h2>About Umanity</h2>
+        <p>Umanity is a groundbreaking cryptocurrency designed to bring people together through innovation and transparency. Our mission is to revolutionize the financial world while building a more connected community.</p>
     </section>
 
-    <section id="video">
-        <h2>Video</h2>
-        <video controls width="100%">
-            <source src="YOUR_VIDEO_FILE.mp4" type="video/mp4"> <!-- Sostituisci con il nome del tuo file video -->
-            Il tuo browser non supporta il tag video.
-        </video>
-    </section>
-
-    <section id="immagini">
-        <h2>Immagini</h2>
-        <img src="aiuto_casa.png" alt="Aiuto Casa" width="300">
-        <img src="aiuto_cibo.png" alt="Aiuto Cibo" width="300">
-        <img src="senza_tetto.png" alt="Senza Tetto" width="300">
-    </section>
-
-    <section id="contatti">
-        <h2>Contattaci</h2>
-        <p>Email: <a href="mailto:Umanity.Crypto@proton.me">Umanity.Crypto@proton.me</a></p>
-        <p>Social:</p>
+    <section id="features">
+        <h2>Features</h2>
         <ul>
-            <li><a href="https://www.instagram.com/umanity.crypto_official/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.threads.net/@umanity.crypto_official?xmt=AQGz6il_uWvx9tFtErT122CcndozPDbjSPTv8x9GuGJxxYw" target="_blank">Threads</a></li>
+            <li>Decentralized and secure blockchain technology</li>
+            <li>Fast and low-cost transactions</li>
+            <li>Eco-friendly and energy-efficient mining</li>
+            <li>Dedicated support for charitable causes</li>
         </ul>
-        <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
-            <label for="messaggio">Messaggio:</label><br>
-            <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
-            <button class="button" type="submit">Invia</button>
-        </form>
     </section>
 
-    <!-- Footer -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="moneta Umanity .png" alt="Umanity Coin">
+            <img src="token crypto .png" alt="Umanity Token">
+            <video controls>
+                <source src="a hand for life.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:support@umanitycrypto.com">support@umanitycrypto.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Follow us on social media: 
+            <a href="#">Twitter</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">LinkedIn</a>
+        </p>
+    </section>
+
+    <section id="chat">
+        <h2>Community Chat</h2>
+        <p>Connect with the Umanity community in real time. Share ideas, ask questions, and stay updated!</p>
+        <div id="chat-box">
+            <div id="messages"></div>
+            <form id="chat-form">
+                <input type="text" id="message" placeholder="Type your message..." required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        &copy; 2024 Umanity. Tutti i diritti riservati.
+        <p>&copy; 2024 Umanity. All rights reserved.</p>
     </footer>
 </body>
 </html>
